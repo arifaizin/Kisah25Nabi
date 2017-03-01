@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ima.wispro.kisah25nabi" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo25"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.Slidr"
+        android:supportsRtl="true">
+        <activity
+            android:name=".Splash"
+            android:theme="@style/Theme.AppCompat.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.ima.wispro.kisah25nabi.MainActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".About"
+            android:label="Tentang">
+        </activity>
+        <activity android:name="com.ima.wispro.kisah25nabi.ViewerActivity"
+            android:theme="@style/Theme.Slidr.Slidable"
+            />
+        <!-- ATTENTION: This was auto-generated to add Google Play services to your project for
+             App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+    </application>
+
+</manifest>
